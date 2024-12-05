@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"> </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\cable\Apple\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\cable\Apple\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Apple\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Apple\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Apple\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Apple\5.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Smartwatch</div>
+            <div class="pname">Type C to Lightning MFI Certified 20W Fast charging USB C Cable for iPhone 14, 14 Pro, 14 Pro Max, 14 Plus, <br> 13, 12, 12 Pro, 11, 11 Pro Max iPhone 12 Mini, X, 8 and iOS Devices (Pack of 1) - WHITE<br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$40.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Top Highlights <br> Brand: Marchpower <br> Connector Type: Lightning <br> Cable Type: Lightning <br> Compatible Devices: Charging Adapter <br> Special Feature: <br> Data Transfer: Compatible Phone Models: iPhone 12 , 12 Mini, 12 Pro, 12
+                Pro Max, <br> iPad Pro, iPhone 11 , 12 Pro , 11 Pro Max X, XS , XS Max, iPhone 8, 8 Plus, <br> iPhone 13, 13 Mini, 13 Pro, 13 Pro Max, iPhone 14, 14 Pro, 14 Plus, 14 Pro Max <br> iPhone 12 , 12 Mini, 12 Pro, 12 Pro Max, iPad Air, iPad
+                Pro, iPhone 11 , 12 Pro <br> , 11 Pro Max X, XS , XS Max, iPhone 8, 8 Plus, iPhone 13, 13 <br> HEAVY DUTY CONNECTORS: Phone charger cable features durable, reinforced connector <br> joints and a strain relief cord design made to endure
+                up to 25,000 lifetime bends, <br> enabling them to withstand everyday use and last longer than the average cable <br> USB C to Lightning cable supports PD Fast Charge 3A (max) for iPad 8th iPad 2020, <br> iPhone 13 Pro/Pro Max/ Mini, 12/12
+                Mini/12 Pro/12 Pro Max/11/11 Pro/11 Pro Max/XS <br> Max/XS/XR/X/8 Plus/8 and iPad Pro 12.9" gen1/iPad Pro 12.9" gen2/iPad Pro 10.5" <br> /iPad Air3 10.5"/iPad mini5 7.9"; This cable also supports the standard charge <br> (5V/2.4A max)
+                for iPhone 7 Plus/7/6 Plus/6/6S Plus/6S etc. <br> Note: You need a Type C port wall charger to achieve fast charging <br> 2 N 1 FUNCTION: Great performance ensures your devices syncs and charge <br> simultaneously with up to 480 mb/s .
+                It syncs photos, music, videos, files <br> with the ability to charge the device. also delivers up to 2.1A current <br> to maximize the charging efficiency performance. <br> QUALITY COPPER WIRE: Connects to your iPhone, <br> iPad with
+                Connector charges/syncs by connecting the USB connector <br> into wall charger or computer. Enjoy charge times up faster than than most standard cables. <br>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

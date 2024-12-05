@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            font-family: arial;
+            border: border-box;
+        }
+        
+        .navbar {
+            height: 60px;
+            background-color: #0f1111;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .nav-logo {
+            height: 50px;
+            width: 100px;
+        }
+        
+        .logo {
+            background-image: url('https://i.postimg.cc/jjym8pNW/amazon-logo.png');
+            background-size: cover;
+            height: 50px;
+            width: 100%;
+        }
+        
+        .border:hover {
+            border: 2px solid white;
+        }
+        /* Box 2 */
+        
+        .add-icon {
+            display: flex;
+        }
+        
+        .add-first {
+            color: #cccccc;
+            font-size: 0.87rem;
+            margin-left: 14px;
+        }
+        
+        .add-second {
+            margin-left: 3px;
+            font-size: 1rem;
+        }
+        /* Box 3 */
+        
+        .nav-search {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            width: 610px;
+            height: 38px;
+            border-radius: 4px;
+        }
+        
+        .nav-search:hover {
+            border: 2px solid orange;
+        }
+        
+        .search-select {
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .search-input {
+            width: 565px;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .search-icon {
+            width: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background-color: #febd68;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: #0f1111;
+        }
+        /* Box 4 and 5 */
+        
+        span {
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+        
+        .list {
+            font-weight: 700;
+        }
+        /* Box 6 */
+        
+        .cart i {
+            font-size: 1.8rem;
+        }
+        
+        .cart {
+            font-weight: 700;
+        }
+        /* Panel 2*/
+        
+        .panel-2 {
+            background-color: #232F3E;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            justify-content: space-evenly;
+        }
+        
+        .p2 {
+            padding: 5px;
+        }
+        
+        .All {
+            color: #ffffff;
+            font-weight: 600;
+            padding: 5px;
+        }
+        
+        .All i {
+            font-size: 20px;
+        }
+        
+        .panel-ops {
+            display: flex;
+            width: 70%;
+        }
+        
+        .panel-ops p {
+            margin-left: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .deals {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        /* Hero Section */
+        
+        .hero-sec {
+            background-image: url("https://i.postimg.cc/ZRV9SbC9/hero-image-3.jpg");
+            height: 380px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        .hero-msg {
+            background-color: white;
+            height: 40px;
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .hero-msg a {
+            color: #007185;
+            cursor: pointer;
+        }
+        /* Shop Section */
+        
+        .shop-section {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #e2e7e2;
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            height: 400px;
+            width: 23%;
+            background-color: white;
+            padding: 20px 0px 15px;
+            margin-top: 15px;
+        }
+        
+        .box-content {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        
+        .bg_img {
+            height: 300px;
+            background-size: cover;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .box-content a {
+            color: #007185;
+            cursor: pointer;
+        }
+        
+        .box-content a:hover {
+            color: rgb(126, 48, 48);
+            text-decoration: underline;
+        }
+        /* Long Box */
+        
+        .box9_Long {
+            height: 250px;
+            width: 97%;
+            background-color: white;
+            padding: 20px 0px 15px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .box9_Long h2 {
+            display: inline;
+            padding-left: 15px;
+        }
+        
+        .box9_Long a {
+            color: #007185;
+            cursor: pointer;
+            padding-left: 20px;
+        }
+        
+        .box9_Long a:hover {
+            color: rgb(126, 48, 48);
+            text-decoration: underline;
+        }
+        
+        .books {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        
+        .img_book {
+            height: 180px;
+            background-size: cover;
+            width: 11%;
+        }
+        /* Footer */
+        /* Foot-panel-1 */
+        
+        footer {
+            margin-top: 15px;
+        }
+        
+        .foot-panel1 {
+            background-color: #37575a;
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font: bolder;
+        }
+        /* Foot-panel-2 */
+        
+        .foot-panel2 {
+            background-color: #232F3E;
+            height: 350px;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .foot-panel2 ul {
+            margin-top: 50px;
+        }
+        
+        ul a {
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 15px;
+            color: #dddddd;
+        }
+        /* Foot-panel-3 */
+        
+        .foot-panel3 {
+            height: 70px;
+            background-color: #232F3E;
+            border-top: 0.5px solid white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .log {
+            width: 100px;
+            height: 550px;
+            font: bolder;
+        }
+        /* Foot-panel 3*/
+        
+        .foot-panel4 {
+            background-color: #0f1111;
+            height: 73px;
+            color: #dddddd;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+        
+        .pages {
+            padding-top: 15px;
+        }
+        
+        .copyright {
+            padding-top: 5px;
+        }
+        
+        img {
+            height: 250px;
+            width: 250px;
+            align-items: left;
+        }
+        
+        button {
+            background-color: yellow;
+            color: black;
+            border: 130px;
+            border-radius: 25%;
+            border-style: hidden;
+        }
+        
+        button:hover {
+            cursor: pointer;
+        }
+        
+        .h {
+            float: right;
+            padding: 3%;
+            margin-right: 50px;
+        }
+        
+        .s {
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+        }
+    </style>
+    <title>scroll section</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>laptop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar" id="navbar">
+                <div class="nav-logo border">
+                    <div class="log">TechZoneWeb</div>
+                </div>
+                <div class="nav-address border">
+                    <p class="add-first"> Deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="add-second">India</p>
+                    </div>
+                </div>
+                <div class="nav-search">
+
+                    <select class="search-select">
+                    <option value="">All</option>
+                </select>
+
+                    <input class="search-input" type="text" placeholder="Search TechZoneWeb">
+
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="nav-sign-in border">
+                    <p><span class="hello">Hello,sign in</span></p>
+                    <p class="list">Account & Lists</p>
+
+                </div>
+                <div class="nav-return border">
+
+                    <p><span class="hello">Returns</span></p>
+                    <p class="list">& Orders</p>
+
+                </div>
+                <div class="cart border">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </div>
+            </div>
+            <div class="panel-2">
+
+                <div class="All border">
+                    <i class="fa-solid fa-bars"></i> All
+                </div>
+                <div class="panel-ops">
+                    <p class=" p2 border"> Today's Deals</p>
+                    <p class=" p2 border"> Customer Service</p>
+                    <p class=" p2 border"> Redgistry</p>
+                    <p class=" p2 border">Gift Cards </p>
+                    <p class=" p2 border"> Sell</p>
+                </div>
+                <div class="deals">
+                    <p> Shop great deals now</p>
+                </div>
+            </div>
+        </header>
+        <div class="s">
+            <a href="g.html"><img src="image\Laptop\HP\1.jpg" alt="img">
+                <div class="h">HP Spectre x360, Intel Core Ultra 7 155H, Built-in AI, 14-inch (35.6 cm), <br> 2.8K, 32GB LPDDR5x, 1TB SSD, Intel Arc Graphics, 9MP IR Camera w/Camera \
+                    <br>Shutter (Win 11, MSO 2021, Blue, 1.34 kg), eu0556TU<br> $1919.20 <br>
+                    <br> <button>BUY NOW</button><br><button>ADD TO CART</button> </div>
+            </a>
+        </div><br>
+        <div class="s">
+            <a href="h.html"><img src="image\Laptop\Asus\1.jpg" alt="img">
+                <div class="h">ASUS Vivobook 15, Intel Core i5-12500H 12th Gen, 15.6" (39.62 cm) FHD, <br> Thin and Light Laptop (16GB/512GB/Win11/Office 2021/Blue/1.7 kg), X1502ZA-EJ541WS<br> $800
+                    <br>
+                    <button>BUY NOW</button><br><button>ADD TO CART</button> </div>
+            </a>
+        </div><br>
+        <div class="s">
+            <a href="i.html"><img src="image\Laptop\Macbook\1.jpg" alt="img">
+                <div class="h">Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) <br> Liquid Retina Display, 8GB Unified Memory, 256GB SSD Storage, Backlit <br> Keyboard, 1080p FaceTime HD Camera, Touch ID- Space Grey<br> $1358.00 <br>
+                    <button>BUY NOW</button><br><button>ADD TO CART</button> </div>
+            </a>
+        </div><br>
+        <!--Footer Section -->
+
+        <!--Panel 1-->
+
+        <footer>
+
+            <div class="foot-panel1">
+                <a href="#navbar">Back to Top</a>
+            </div>
+
+            <!--Panel 2-->
+
+            <div class="foot-panel2">
+
+                <ul>
+                    <p>Get to Know Us</p>
+
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About TechZoneWeb</a>
+                    <a>Investor Relations</a>
+                    <a>TechZoneWeb Devices</a>
+                    <a>TechZoneWeb Science</a>
+                </ul>
+
+                <ul>
+                    <p>Get to Know Us</p>
+
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About TechZoneWeb</a>
+                    <a>Investor Relations</a>
+                    <a>TechZoneWeb Devices</a>
+                    <a>TechZoneWeb Science</a>
+                </ul>
+
+                <ul>
+                    <p>Get to Know Us</p>
+
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About TechZoneWeb</a>
+                    <a>Investor Relations</a>
+                    <a>TechZoneWeb Devices</a>
+                    <a>TechZoneWeb Science</a>
+                </ul>
+
+                <ul>
+                    <p>Get to Know Us</p>
+
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About TechZoneWeb</a>
+                    <a>Investor Relations</a>
+                    <a>TechZoneWeb Devices</a>
+                    <a>TechZoneWeb Science</a>
+                </ul>
+            </div>
+
+
+            <!--Panel 3-->
+
+            <div class="foot-panel3">
+
+                <div class="logo">
+                    <center>TECHZONEWEB</center>
+                </div>
+
+            </div>
+
+            <!--Panel 4-->
+
+            <div class="foot-panel4">
+
+                <div class="pages">
+                    <a> Conditions of Use</a>
+                    <a> Privacy Notice</a>
+                    <a>Your Ads Privacy Choices</a>
+                </div>
+
+                <div class="copyright">
+                    © 1996-2023,TechZoneWeb.com, Inc. or its affiliates
+                </div>
+
+            </div>
+        </footer>
+
+
+    </body>
+
+    </html>
+</body>
+
+</html>

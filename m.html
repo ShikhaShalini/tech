@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"> SKULLCANDY EARBUDS</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\Earbuds\Skull candy\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\Earbuds\Skull candy\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Skull candy\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Skull candy\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Skull candy\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Skull candy\5.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Skull candy\6.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Smartwatch</div>
+            <div class="pname">Skullcandy Smokin Buds In-Ear Wireless Earbuds, 20 Hr Battery, <br> Use Either Bud Solo,Rapid Charge, Microphone, Works with iPhone Android and Bluetooth Devices - Black <br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$70.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Supreme Audio - workout, relax, skate listening favorite tunes. Hear <br> every beat of your music and let the bass blow UP! We put a mic in<br> each bud allowing you to have 1 bud in and leave the other in the <br> case, call and hear
+                outside sound at the same time <br> 50% Renewable Plastic - Smokin’ Buds are made with up to 50% <br> renewable plastics and every Skullcandy product uses 100% <br> recyclable packaging. Renewable plastics are made from biobased or <br>                biodegradable materials and can be reused or recycled. <br> 20 Hour Battery - with an incredible 20 hours of battery to keep your<br> Smokin' Buds powered. The earbuds hold 8 hours and the charging case <br> holds 12 hours. Plus, using
+                rapid charge, the first 10 minutes <br> of your charge will give you 2 hours of play. <br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <center> <iframe width="560" height="315" src="image\Earbuds\Skull candy\vid.mp4" title="SKULLCANDY EARBUDS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>            </center>
+    </div>
+    <div id="review">
+        <div>
+            <h4>alok kumar</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            As someone who travels frequently, these buds have become an essential part of my journey. <br> The compact charging case easily slips into my pocket, and the buds themselves are lightweight and discreet. <br> Plus, the quick charge feature
+            is a lifesaver when I'm on the go. <br>
+        </div>
+        <div>
+            <h4>vineeta singh</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            Good product at this price range. Sound quality is also fine but outside sound is audible even on full volume <br>
+        </div>
+        <div>
+            <h4>meenakshi mishra</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            I am writing this after using it for 1 week .. it is great if you are using it for music or call.. <br> I use it most for teams call.. audio is great but there is no ANC feature as mentioned as mic's are more sensitive and <br> capture all
+            background activities.. <br> also there is lag in connecting with laptops.. overall it is good in this budget.. <br>
+        </div>
+    </div>
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

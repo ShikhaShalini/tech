@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"> BOAT ROCKERZ HEADPHONE</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\Headphone\Boat rockerz\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\Headphone\Boat rockerz\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Boat rockerz\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Boat rockerz\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Boat rockerz\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Boat rockerz\5.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Headphone</div>
+            <div class="pname">boAt Rockerz 450R On-Ear Headphones with 15 Hours Battery, <br> 40mm Drivers, Padded Ear Cushions, Easy Access Controls and Voice Assistant <br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$70.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Its 40mm dynamic drivers help pump out immersive HD audio all day long <br> It provides a massive battery backup of upto 15 hours for a superior playback time. <br> It has been ergonomically designed and structured as an on-ear headphone
+                to <br>provide the best user experience with its comfortable padded earcushions and lightweight design <br> You can control your music without hiccups using the easy access <br> controls, communicate seamlessly using the built-in mic,
+                access voice <br> assistant and always stay in the zone <br> Tap into instant wireless connectivity <br>with optimum Bluetooth V4.2 connectivity One can connect to boAt Rockerz <br> 450 via not one but two modes, Bluetooth as well as AUX
+                <br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <center> <iframe width="560" height="315" src="image\Headphone\Boat rockerz\vid.mp4" title="BOAT ROCKERZ HEADPHONE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                autoplay></iframe> </center>
+    </div>
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

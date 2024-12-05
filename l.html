@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">SONY HEADPHONES </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\Headphone\Sony\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\Headphone\Sony\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Sony\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Sony\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Sony\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Headphone\Sony\5.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Headphone</div>
+            <div class="pname">Sony WH-1000XM4 Industry Leading Wireless Noise Cancellation <br> Bluetooth Over Ear Headphones with Mic for Phone Calls, <br>30 Hours Battery Life, Quick Charge, AUX, Touch Control <br> and Voice Control - Black<br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$50.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Digital noise cancelling: Industry leading Active Noise Cancellation<br> (ANC) lends a personalized, virtually soundproof experience at any situation; <br> Voice assistant: Alexa, Google Assistant & Siri enabled (In-built) for<br> voice
+                access to music, information and more. <br>Activate with a simple touch<br> Speak-to-chat: Headphones use an array of smart <br>technologies to create a seamless, hands-free listening experience. <br>For eg, simply start speaking to automatically
+                pause <br>your music in Speak-to-Chat;<br> Wearing Detection: Proximity sensor and two acceleration sensors in your headphones <br> can detect whether you're wearing them or not, then adapt playback accordingly to help save battery power
+                <br> Quick attention mode: Cover the right ear cup with your palm to turn down music <br> for instant, easy conversation;Smart listening: WH-1000XM4 adjusts the ambient sound <br> to your activity to give you the best noise cancellation
+                <br> Long battery life/Quick Charge: A single charge provides up to 30 hrs of <br> playtime for reliable all day listening and Quick charge for 10min charge for <br> 5 hours play back;Multipoint connection : It can be paired with two Bluetooth
+                devices <br> at the same time.So when a call comes in, your headphones know which device is ringing <br> and connect to the right one automatically.; Touch controls: Change the track, turn the <br> volume up or down and take or make calls
+                by tapping or swiping the panel with your fingertip <br> Warranty Description: 1 Year Warranty Provided By The Manufacturer From Date Of Purchase <br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <center> <iframe width="560" height="315" src="image\Headphone\Sony\Vid.mp4" title="SONY HEADPHONES " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>            </center>
+    </div>
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

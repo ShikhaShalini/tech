@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">SAMSUNG SMARTPHONE</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\Smart phone\Samsung\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\Smart phone\Samsung\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Smart phone\Samsung\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Smart phone\Samsung\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Smart phone\Samsung\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Smart phone\Samsung\5.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Smart phone\Samsung\6.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Smartphone</div>
+            <div class="pname"></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$412.80</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Brand Samsung <br> Model Name Galaxy S20 <br> Operating System Android <br> Cellular Technology 4G <br> Memory Storage Capacity 128 GB <br> About this item:<br> 64+12+12MP triple quad rear camera - <br> 64MP OIS F2.0 tele camera + 12MP
+                F2.2 ultra wide + 12MP (2PD) OIS F1.8 wide rear camera <br> | 10MP (2PD) OIS F2.2 front punch hole camera | rear LED flash<br> 15.83 centimeters (6.2-inch) dynamic AMOLED display with capacitive touchscreen <br>| 3200 x 1440 pixels resolution
+                | Quad HD+ Resolution<br> Memory, Storage & SIM: 8GB RAM | <br> 128GB internal memory expandable up to 1TB | <br> Dual SIM (nano+nano) dual-standby (4G+4G) | <br> MicroSD card slot (Expandable upto 1 TB), Hybrid Sim Slot<br> Android v10.0
+                operating system with 2.73GHz+2.5GHz+2GHz Exynos 990 octa core processor<br> 4000mAH (non-removable) lithium-ion battery | Face-Unlock & Finger Print sensor<br> 1 year manufacturer warranty for device and <br>6 months manufacturer warranty
+                for in-box accessories including batteries from the date of purchase<br> Box also includes:<br> Non-removable battery included, earphones, travel adapter, USB cable and user manual<br>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <center> <iframe width="560" height="315" src="image\Smart phone\Samsung\vid.mp4" title="Redmi Smartphone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>            </center>
+    </div>
+    <div id="review">
+        <div>
+            <h4>anita</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            Now I mention good points and bad points. <br> 1. The built quality is good <br> 2. Battery life is good <br> 3. Looks is great looks like a premium phone. <br> 4. Good memory space. <br> Apart from these phone is average and more than average
+            on most of the aspects. <br>
+        </div>
+        <div>
+            <h4>atul</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            Good at this price range, a budget phone does all your needs in a 5G phone, Memory at this price is super, <br>display is quite big when you compare with the pro phones, <br>
+        </div>
+        <div>
+            <h4>anish</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            Good in budget <br>
+        </div>
+    </div>
+    </div>
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

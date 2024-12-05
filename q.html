@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"> </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\cable\Realme\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\cable\Realme\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Realme\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Realme\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Realme\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\cable\Realme\5.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Smartwatch</div>
+            <div class="pname">boAt Type C A750 6.5A Super Fast Charging Flat Cable Cable with Stress Resistant, <br> Tangle-free, & 480Mbps Data Transmission, 10000+ Bends Lifespan and Extended 1.5m Length (Martian Red)<br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$12.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Brand: boAt <br> Connector Type: USB Type C<br> Cable Type:USB<br> Compatible Devices: Smartphone<br> Special Feature: Tangle Free<br> Recommended Uses For Product<br> Data: The boAt Type C A750 cable is compatible with <br> smartphones,
+                tablets, PC peripherals, Bluetooth <br> speakers, power banks and all other devices with Type-C ports.<br> It ensures 6.5A fast charging for all the latest charging <br> protocols and data transmissions with rapid sync at 480 Mbps<br>                The convenient flat cable design makes it <br> tangle free, sturdy and invincible against external damage.<br> Its ultra-durable PVC housing shell housing and
+                <br>extended tail protection makes it last longer to give a 10000+ Bends Lifespan.<br> boAt's Type C A750 cable offers a perfect <br>1.5 meters in length for smooth & hassle-free user experience.<br> 2 years warranty from the date of purchase<br>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

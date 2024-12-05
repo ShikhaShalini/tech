@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">NOISE EARBUDS </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\Earbuds\Noise\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\Earbuds\Noise\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Noise\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Noise\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Noise\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Earbuds\Noise\5.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Smartwatch</div>
+            <div class="pname">Noise Buds X Prime in-Ear Truly Wireless Earbuds with 120H of Playtime, Quad Mic with ENC, <br> Instacharge(10 min=200 min),Premium Dual Tone Finish, 11mm Driver, BT v5.3<br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$40.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Up to 120-hour playtime: Unleash a sonic marathon with earbuds that defy the clock. <br> Quad mic with ENC: Experience exceptional call clarity even in noisy environments. <br> 11mm driver: Immerse yourself in rich, high-quality sound
+                courtesy of our powerful audio drivers. <br> InstachargeTM (10-min charge = 200-min playtime): Enjoy your music without <br> interruption with super-fast charging that offers hours of playback in just 10 minutes. <br> Low latency (up to
+                50ms): Conquer lag and immerse yourself in a gaming experience that's truly seamless. <br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <center> <iframe width="560" height="315" src="image\Earbuds\Noise\Vid.mp4" title="NOISE EARBUDS " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>            </center>
+    </div>
+    <div id="review">
+        <div>
+            <h4>alok kumar</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            As someone who travels frequently, these buds have become an essential part of my journey. <br> The compact charging case easily slips into my pocket, and the buds themselves are lightweight and discreet. <br> Plus, the quick charge feature
+            is a lifesaver when I'm on the go. <br>
+        </div>
+        <div>
+            <h4>vineeta singh</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            Good product at this price range. Sound quality is also fine but outside sound is audible even on full volume <br>
+        </div>
+        <div>
+            <h4>meenakshi mishra</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            I am writing this after using it for 1 week .. it is great if you are using it for music or call.. <br> I use it most for teams call.. audio is great but there is no ANC feature as mentioned as mic's are more sensitive and <br> capture all
+            background activities.. <br> also there is lag in connecting with laptops.. overall it is good in this budget.. <br>
+        </div>
+    </div>
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>

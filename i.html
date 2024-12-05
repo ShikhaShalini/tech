@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="abcdef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"> MACBOOK</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="#review">Review</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="image\Laptop\Macbook\1.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="image\Laptop\Macbook\1.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Laptop\Macbook\2.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Laptop\Macbook\3.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Laptop\Macbook\4.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="image\Laptop\Macbook\5.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url"> <a href="index.html">Home > </a> <a href="index.html">Product</a> >Laptop</div>
+            <div class="pname">Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) <br> Liquid Retina Display, 8GB Unified Memory, 256GB SSD Storage, Backlit <br> Keyboard, 1080p FaceTime HD Camera, Touch ID- Space Grey <br></div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$1858.00</div>
+
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="buy.html"><button class="buy-btn">Buy Now</button></a>
+            </div>
+            <div>
+                <h2>DESCRIPTION</h2>
+                Brand: Apple <br> Model Name: MacBook Air<br> Colour: Midnight<br> CPU Model: Unknown<br> Operating System: Mac OS<br> Special Feature: Portable<br> Graphics Card Description: Integrated<br> Graphics Coprocessor: Apple Integrated Graphics<br>                CPU Speed: 1 GHz<br> Hard Disk Description: SSD<br> 13-inch MacBook Air with M3 chip<br> USB-C to MagSafe 3 Cable (2m)<br> USB-C Power Adapter<br> The M3 chip brings even greater capabilities to the superportable 13-inch MacBook Air.<br>                With up to 18 hours of battery life, you can take it anywhere and blaze through work and play.<br> Supercharged by M3 — The blazing-fast MacBook Air with the M3 <br> chip is a super-portable laptop that sails through work and play.<br>                PORTABLE DESIGN — Lightweight and just over 1 cm thin, so you can take MacBook Air anywhere you go.<br> GET MORE DONE FASTER — The powerful 8-core CPU and up to <br> 10-core GPU of the Apple M3 chip keep things running smoothly.<br> UP
+                TO 18 HOURS OF BATTERY LIFE — Amazing, all-day <br> battery life so you can leave the power adapter at home.<br> A BRILLIANT DISPLAY — The 34.46 cm (13.6″) Liquid Retina display supports 1 billion colours.<br> LOOK SHARP, SOUND GREAT —
+                Everything looks and sounds <br> amazing with a 1080p FaceTime HD camera, three mics and four speakers with Spatial Audio.<br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <center> <iframe width="560" height="315" src="image\Laptop\Macbook\Vid.mp4" title=" MACBOOK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>            </center>
+    </div>
+    <div id="review">
+        <div>
+            <h4>anita</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            Now I mention good points and bad points. <br> 1. The built quality is good <br> 2. Battery life is good <br> 3. Looks is great looks like a premium laptop. <br> 4. Good memory space. <br>
+        </div>
+        <div>
+            <h4>atul</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            Good at this price range, a budget laptop does all your needs, Memory at this price is super, <br>display is quite big when you compare with the pro laptop, <br>
+        </div>
+        <div>
+            <h4>anish</h4>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            Good in budget <br>
+        </div>
+    </div>
+    </div>
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+
+        function showImg(pic) {
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+
+</html>
+https://www.transfernow.net/dl/20240329zQh2u6wO
